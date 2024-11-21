@@ -1,6 +1,4 @@
-from django.shortcuts import render
-
 from django.http import HttpResponse
 
 def HelloWord(request):
-    return HttpResponse('<H1>Hello Word<H1>')
+    return HttpResponse('<h1>Hello World</h1>')  # Etiquetas correctamente cerradas
