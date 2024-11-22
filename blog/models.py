@@ -1,9 +1,9 @@
-# item/models.py
 from django.db import models
 
 class Book(models.Model):
     title = models.CharField(max_length=200)
-    description = models.TextField()
+    author = models.CharField(max_length=100, default="Unknown Author")  # Agregar valor predeterminado
+    created_at = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
-        return f"{self.title}, {self.description}"
+        return self.title

@@ -20,8 +20,9 @@ from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include('blog.urls')),  # Redirige las solicitudes de la raíz a 'blog'
+    path('', include('blog.urls')),  # Incluye las URLs del blog
 ]
+
 
 
 
