@@ -1,17 +1,8 @@
 {
-  "builds": [
-    {
-      "src": "x/wsgi.py",
-      "use": "@vercel/python",
-      "config": {
-        "runtime": "python3.9"
-      }
-    }
-  ],
-  "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "x/wsgi.py"
+  "rewrites": [
+{
+      "source": "/(.*)",
+      "destination": "/"
     }
   ]
 }
